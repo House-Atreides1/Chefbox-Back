@@ -12,7 +12,7 @@ const recipeSchema = new Schema({
     required: true,
   },
   directions: {
-    type: [String],
+    type: String,
     required: true,
   },
 });
