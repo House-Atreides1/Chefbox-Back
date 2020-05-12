@@ -1,0 +1,27 @@
+{
+  "name": "chefbox-back",
+  "version": "1.0.0",
+  "description": "Server for the Neumont Group recipe app, ChefBox!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/House-Atreides1/Chefbox-Back.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/House-Atreides1/Chefbox-Back/issues"
+  },
+  "homepage": "https://github.com/House-Atreides1/Chefbox-Back#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.13",
+    "nodemon": "^2.0.3"
+  }
+}
