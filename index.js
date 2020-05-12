@@ -12,6 +12,7 @@ app.use(express.json());
 
 const db = process.env.DATABASE_URI;
 
+const usersRoute = require("./routes/users");
 const recipesRoute = require("./routes/recipes");
 
 mongoose.connect(
@@ -24,6 +25,7 @@ mongoose.connect(
   () => console.log("Database connection successful.")
 );
 
+app.use("/user", usersRoute);
 app.use("/recipes", recipesRoute);
 
 app.listen(port, () =>
