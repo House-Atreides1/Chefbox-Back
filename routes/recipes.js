@@ -16,6 +16,12 @@ router.get("/", (req, res) => {
     .catch((err) => res.send(err));
 });
 
+router.get("/:id", (req, res) => {
+  Recipe.findById(req.params.id)
+    .then((recipe) => res.json(recipe))
+    .catch((err) => res.status(400).json(`Error: ${err}`));
+});
+
 router.post("/add", (req, res) => {
   let new_recipe = new Recipe(req.body);
   let saved_recipe = new_recipe.save();
